@@ -1,16 +1,16 @@
 {
+  "homepage": "https://balmaaa.github.io/CS128.1-SampleWeb/",
   "name": "website-sample",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://balmaaa.github.io/CS128.1-SampleWeb/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build --base=./",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",
