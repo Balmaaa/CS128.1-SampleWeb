@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import Contact from './routes/Contact.jsx';
-import NavigationBar from './components/NavigationBar.jsx'; // Make sure you import NavigationBar
+import NavigationBar from './components/NavigationBar.jsx';
 import FollowUpCallForm from './routes/FollowUpCallForm.jsx';
 
 const router = createBrowserRouter([
