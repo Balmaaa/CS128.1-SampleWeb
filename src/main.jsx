@@ -2,9 +2,11 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
-import Contact from './routes/Contact.jsx';
-import NavigationBar from './components/NavigationBar.jsx';
+import GeneralInformationForm from './routes/GeneralInformationForm.jsx';
 import FollowUpCallForm from './routes/FollowUpCallForm.jsx';
+import MedicationCounseling from './routes/MedicationCounseling.jsx';
+import LoginPage from './routes/LoginPage.jsx';
+import PatientDataTable from './routes/PatientDataTable.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,8 +18,20 @@ const router = createBrowserRouter([
     element: <FollowUpCallForm />,
   },
   {
-    path: "/contact",
-    element: <Contact />,
+    path: "/generalinformationform",
+    element: <GeneralInformationForm />,
+  },
+  {
+    path: "/medicationalcounseling",
+    element: <MedicationCounseling />,
+  },
+  {
+    path: "/loginpage",
+    element: <LoginPage />,
+  },
+  {
+    path: "/patientdatetable",
+    element: <PatientDataTable />,
   },
 ]);
 

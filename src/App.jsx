@@ -1,12 +1,10 @@
-import { useState } from 'react';
-import NavigationBar from './components/NavigationBar.jsx'; // Import NavigationBar
+import NavigationBar from './components/NavigationBar.jsx';
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
-      <NavigationBar /> {/* Add NavigationBar here */}
+      <NavigationBar />
       <h1>Home Page</h1>
     </>
   );
